@@ -1,0 +1,16 @@
+.thumbnail-1{
+    width:300px;
+    height:300px;
+    /* by using the below, feature, it only shows the part of width and height of that image instead of fixing 
+    the whole image into that size. So like cropping into that width and height*/
+    /* onject fit: contain basically fixes the whole pic into the certain size instead of cropping */
+    object-fit: cover;
+    /* this one adjusts the perspective of looking at that iamge */
+    object-position:left; 
+    /* can make a pic circle using border-radius */
+}
+
+.search-bar{
+    font-size:20px;
+    margin-left:13px;
+}
