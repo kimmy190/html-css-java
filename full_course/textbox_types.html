@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Diff types of textbox</title>
+    <style>
+        .textbox-1{
+            font-size:13px;
+            border: 1px solid rgb(75, 75, 75);
+            border-radius: 5px;
+            padding:8px;
+        }
+
+        .text-2{
+            margin-left:30px;
+            width:40%;
+            border-radius: 20px;
+            border-style: none;
+            box-shadow: 0px 0px 7px rgba(0,0,0,0.3);
+            padding:8px;
+            padding-left:14px;
+        }
+
+        p{
+            font-family: Arial, Helvetica, sans-serif;
+            color:gray;
+            font-size:12px;
+        }
+
+        #email{
+            margin-top:40px;
+            margin-bottom: 4px;
+        }
+
+        .email-box{
+            width:35%;
+            border:1px solid black;
+            border-radius:5px;
+        }
+
+        #agree{
+            width:35%;
+            background-color: rgb(23, 103, 215);
+            color:white;
+            border:none;
+            padding:10px;
+            border-radius: 24px;
+            cursor: pointer;
+        }
+
+        #agree:hover{
+            opacity: 0.8;
+        }
+
+        .twitter{
+            margin-top:50px;
+        }
+        .cat{
+            width:50px;
+            /* use this to make an image circle */
+            border-radius:50%;
+            object-fit: cover;
+            vertical-align: middle;
+        }
+
+        .text-tweet{
+            border:none;
+            margin-left:4px;
+            margin-right:60px;
+            font-size:15px;
+        }
+
+        .tweet{
+            border:none;
+            background-color: rgb(64, 135, 250);
+            color:white;
+            font-weight: bold;
+            border-radius: 20px;
+            padding: 10px;
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+
+    </style>
+</head>
+<body>
+    <input class="textbox-1" type="text" placeholder="Search">
+    
+    
+    <input class="text-2" type="text" placeholder="Search Google or type a URL">
+    
+    <p id="email">
+        <span>Email</span>
+    </p>
+    <input class="email-box" type="text">
+    <p id="description">
+        By clicking Agree & Join, you agree to the Privacy Policy.
+    </p>
+    <button id="agree">Agree & Join</button>
+
+    <p class="twitter">
+        <img class="cat" src="https://i.pinimg.com/474x/e4/c3/4c/e4c34ca6f787cb58676325e20c0189d4.jpg">
+        <input class="text-tweet" type="text" placeholder="What's happening?">
+        <button class="tweet">Tweet</button>
+    </p>
+</body>
+</html>
