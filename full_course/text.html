@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Different types of text</title>
+    <style>
+        .video{
+            /* changing the font */
+            /* font-family: Arial;
+            font-size:30px;
+            font-weight:bold;
+            font-style: italic;
+            text-align:center; */
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight:bold;
+            font-size:18px;
+            /* this allows to strucutre the text based on what we want to do */
+            width: 400px;
+            line-height: 25px;
+            margin-bottom:5px;
+        }
+
+        .subs{
+            font-family: Arial, Helvetica, sans-serif;
+            color:rgb(72, 72, 72);
+            font-size:14px;
+            margin-top:0px;
+        }
+
+        #person{
+            margin-top:15px;
+        }
+
+        #paragraph{
+            width:280px;
+            /* this is the space between each lines */
+            line-height: 20px;  
+            margin-top:30px;
+        }
+
+        #banner{
+            margin-top:90px;
+            background-color: rgb(226, 60, 60);
+            color:white;
+            padding:20px;
+            text-align: center;
+            /* only affect certain affect of the part */ 
+        }
+
+        .shop{
+            cursor:pointer;
+        }
+
+        .shop:hover{
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <p class="video">
+        Talking Tech and AI with Google Chrome CEO Sundar Pichaiii lets go 
+    </p>
+
+
+    <div class="subs">
+        <!-- creating a dot in HTML : search html entity middle dot -->
+        3.4M views &#183; 6 months ago
+        <p id="person">
+        Marques Brownlee &#10003;
+        </p>
+
+        <p id="paragraph">
+            Talking tech and AI on the heels of Google I/O. Also a daily
+            driver phone reveal from da google. 
+        </p>
+
+        <p id="banner">
+            Shop early for the best selection of holiday favourites. <span class="shop">Shop now! &#62;</span>
+        </p>
+    </div>
+
+    
+    
+</body>
+</html>
