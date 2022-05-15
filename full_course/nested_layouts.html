@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title> Nested Layouts Exercises</title>
+        <style>
+            .pic{
+                width:80px;
+                height:80px;
+                display: inline-block;
+                margin-top:20px;
+            }
+
+            .pfp{
+                width:60px;
+                height:60px;
+                object-fit:cover;
+                border-radius: 50%;
+                margin-top:17px;
+                margin-left:10px;
+                cursor:pointer;
+            }
+
+            .descrip{
+                display:inline-block;
+                font-family: Arial, Helvetica, sans-serif;
+                margin:0px;
+                height:80px;
+            }
+
+            .name, .intro, .info{
+                margin:0px;
+                font-size:16px;
+                margin-top:4px;
+            }
+
+            .name{
+                font-weight: bold;
+                cursor:pointer;
+            }
+
+            .name:hover{
+                text-decoration: underline;
+            }
+
+            .intro, .info{
+                font-size:14px;
+                color:grey;
+            }
+
+            .foll{
+                display:inline-block;
+                height:80px;
+                vertical-align: middle;
+            }
+
+            #follow{
+                margin-left:120px;
+                padding:8px;
+                padding-left:13px;
+                padding-right:13px;
+                border:none;
+                background-color: rgb(56, 131, 228);
+                color:white;
+                border-radius: 4px;
+                cursor:pointer;
+            }
+
+            #follow:hover{
+                opacity:0.8;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="whole">
+
+            <div class="pic">
+                <img class="pfp" src="https://cdn.cnn.com/cnnnext/dam/assets/190503220200-spongebob-squarepants-story-top.jpg"
+                alt="spongebob squarepants">
+            </div>
+    
+            <div class="descrip">
+                <p class="name">Spongebob</p>
+    
+                <p class="intro">the comedian</p>
+    
+                <p class="info">sexy</p>
+            </div> 
+            
+            <div class="foll">
+                <button id="follow">Follow</button>
+            </div>
+
+        </div>
+    </body>
+</html>
