@@ -1,6 +1,5 @@
 .thumbnail-1{
     width:300px;
-    height:300px;
     /* by using the below, feature, it only shows the part of width and height of that image instead of fixing 
     the whole image into that size. So like cropping into that width and height*/
     /* onject fit: contain basically fixes the whole pic into the certain size instead of cropping */
@@ -8,9 +7,72 @@
     /* this one adjusts the perspective of looking at that iamge */
     object-position:left; 
     /* can make a pic circle using border-radius */
+    display:block;
+    margin-bottom:10px;
 }
 
+
 .search-bar{
-    font-size:20px;
+    font-size:16px;
     margin-left:13px;
+    /* it switches to block element, making it use the next line */
+    display: block; 
+
+}
+
+p{
+    /* the comma and Arial is called a font sack */
+    font-family: Roboto, Arial;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.video-title{
+    /* display:inline-block; */
+    margin-top:3px;
+    font-size:14px;
+    font-weight:500;
+    line-height:17px;
+    margin-bottom:12px;
+}
+
+    /* this is the way to change a block element into an inline block element */
+    /* display:inline-block; */
+
+.first-vid{
+    width:300px;
+    display:inline-block;
+    vertical-align:top;
+    margin-right:15px;
+}
+
+.pfp{
+    /* this means it takes up 100% of the container */
+    /* width:100%; */
+    width:40px;
+    height:40px;
+    object-fit:cover;
+    border-radius: 50%;
+
+}
+
+.channel-pic{
+    display:inline-block;
+    width:50px;
+    height:50px;
+    vertical-align: top;
+}
+
+.video-info{
+    display:inline-block;
+    width:200px;
+}
+
+.vid-author, .vid-stats{
+    font-size:12px;
+    color:rgb(107, 107, 107);
+}
+
+.vid-author{
+    margin-bottom:5px;
 }
