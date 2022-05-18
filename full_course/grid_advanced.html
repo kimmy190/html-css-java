@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>More advanced version of div example</title>
+        <style>
+            a{
+                text-decoration: none;
+                color:black;
+                cursor:pointer;
+            }
+
+            a:hover{
+                color:pink;
+                text-decoration: underline;
+            }
+
+            .whole-body{
+                display:grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                column-gap:30px;
+                margin-top:40px;
+            }
+            
+            .cat-pic{
+                width:100%;
+                object-fit:cover;
+                height:300px;
+            }
+
+            .cat{
+                align-items: center;
+                /* background-color: beige; */
+                padding-bottom:25px;
+                border-radius: 10px;
+                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+            }
+
+            p{
+                margin-top:7px;
+                margin-bottom:7px;
+                font-family: Arial, Helvetica, sans-serif;
+                color:grey;
+            }
+
+            .name{
+                font-weight: bold;
+                font-size:20px;
+                color:black;
+                cursor:pointer;
+            }
+
+            .name:hover{
+                text-decoration: underline;
+            }
+
+            #descript{
+                padding-left:13px;
+            }
+
+            .friend-info{
+                display:grid;
+                grid-template-columns: 40px 1fr;
+                column-gap: 14px;
+                margin-bottom:15px;
+
+            }
+
+            #pfp{
+                width:100%;
+                height:40px;
+                object-fit:cover;
+                border-radius: 50%;
+            }
+
+            button{
+                border:none;
+                background-color: rgb(27, 135, 242);
+                color:white;
+                padding:10px;
+                border-radius: 5px;
+                width:40%; 
+                cursor:pointer;
+            }
+
+            button:hover{
+                opacity:0.8;
+            }
+
+            #first{
+                margin-top:20px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <p id="first">Previous div example : <a href="div.html">here</a></p>
+
+        <div class="whole-body">
+            <div class="cat">
+                <img class="cat-pic" src="https://i.natgeofe.com/n/46b07b5e-1264-42e1-ae4b-8a021226e2d0/domestic-cat_thumb_square.jpg">
+                <div id="descript"> 
+                    <p class="name">Oliver</p>
+
+                    <div class="friend-info">
+                        <img id="pfp" src="https://ichef.bbci.co.uk/news/400/cpsprodpb/14F0E/production/_119647758_84555a20-7d7f-4d16-906a-46bf24d4698f.jpg">
+                        <p class="friends">2 mutual friends</p>
+                    </div>
+                    
+                    <button>Add Friend</button>
+                </div>
+            </div>
+        
+
+
+            <div class="cat">
+                <img class="cat-pic" src="https://www.rd.com/wp-content/uploads/2021/01/GettyImages-1175550351.jpg">
+                <div id="descript"> 
+                    <p class="name">Jack</p>
+
+                    <div class="friend-info">
+                        <img id="pfp" src="https://ichef.bbci.co.uk/news/400/cpsprodpb/14F0E/production/_119647758_84555a20-7d7f-4d16-906a-46bf24d4698f.jpg">
+                        <p class="friends">2 mutual friends</p>
+                    </div>
+                        
+                    <button>Add Friend</button>
+                </div>
+            </div>
+        
+
+
+            <div class="cat">
+                <img class="cat-pic" src="https://media.wired.co.uk/photos/60c8730fa81eb7f50b44037e/3:2/w_3329,h_2219,c_limit/1521-WIRED-Cat.jpeg">
+                <div id="descript"> 
+                    <p class="name">Max</p>
+
+                    <div class="friend-info">
+                        <img id="pfp" src="https://ichef.bbci.co.uk/news/400/cpsprodpb/14F0E/production/_119647758_84555a20-7d7f-4d16-906a-46bf24d4698f.jpg">
+                        <p class="friends">4 mutual friends</p>
+                    </div>
+
+                    <button>Add Friend</button>
+                </div>
+            </div>
+        </div>
+        
+    </body>
+</html>
