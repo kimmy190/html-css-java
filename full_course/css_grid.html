@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>CSS grid practice</title>
+    </head>
+    <body>
+        <!-- Css grid practice  -->  
+        <div style="
+            display:grid;
+            grid-template-columns: 100px 100px;
+        ">
+            <!-- this is inline style, which is writing the css code inside the html -->
+            <div style="background-color:lightblue;">
+                div 1 
+            </div>
+            <div style="background-color:pink;">
+                div 2 <p>text</p>
+            
+            </div>
+        </div>
+
+        <div style="
+            margin-top:30px;
+            display:grid;
+            /* this allows us to set the width of each columns */
+            grid-template-columns: 100px 100px 200px;
+        ">
+            <!-- this is inline style, which is writing the css code inside the html -->
+            <div style="background-color:lightblue;">
+                div 1 
+            </div>
+            <div style="background-color:pink;">
+                div 2 <p>text</p>
+            </div>
+            <div style="background-color:lightblue;">div 3 : 200px</div>
+            <!-- as we set width of 3 columns, when we add a new div element, it goes to another row-->
+            <div style="background-color:pink;">div 3 : 200px</div>
+        </div>
+
+        
+        <div style="
+            margin-top:30px;
+            display:grid;
+            /* 1fr = 1freespace : takes up the remaining space  */
+            grid-template-columns: 100px 1fr;
+        ">
+            <!-- this is inline style, which is writing the css code inside the html -->
+            <div style="background-color:lightblue;">
+                div 1 
+            </div>
+            <div style="background-color:pink;">div 2 </div>
+        </div>
+
+        <div style="
+            margin-top:30px;
+            display:grid;
+            /* the number in front of fr acts as a ratio */
+            grid-template-columns: 100px 1fr 2fr;
+        ">
+            <!-- this is inline style, which is writing the css code inside the html -->
+            <div style="background-color:lightblue;">
+                100px 
+            </div>
+            <div style="background-color:pink;">1fr </div>
+            <div style="background-color:lightblue;">2fr</div>
+        </div>
+
+
+
+    </body>
+</html>
