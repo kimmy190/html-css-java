@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <title>CSS grid practice</title>
     </head>
-    <body>
+    <body style="padding-bottom: 1000px;">
         <!-- Css grid practice  -->  
         <div style="
             display:grid;
@@ -57,6 +57,7 @@
             display:grid;
             /* the number in front of fr acts as a ratio */
             grid-template-columns: 100px 1fr 2fr;
+            column-gap:20px;
         ">
             <!-- this is inline style, which is writing the css code inside the html -->
             <div style="background-color:lightblue;">
@@ -64,6 +65,26 @@
             </div>
             <div style="background-color:pink;">1fr </div>
             <div style="background-color:lightblue;">2fr</div>
+        </div>
+
+        <div style="
+            margin-top:30px;
+            display:grid;
+            /* the number in front of fr acts as a ratio */
+            grid-template-columns: 1fr 1fr 1fr;
+            column-gap:20px;
+        ">
+            <!-- this is inline style, which is writing the css code inside the html -->
+            <div style="background-color:lightblue; height:200px;">
+                100px 
+            </div>
+            <div style="background-color:pink; height:200px;">1fr </div>
+            <div style="background-color:lightblue; height:200px;">2fr</div>
+            <div style="background-color:pink; height:200px;">
+                100px 
+            </div>
+            <div style="background-color:lightskyblue; height:200px;">1fr </div>
+            <div style="background-color:red; height:200px;">2fr</div>
         </div>
 
 
