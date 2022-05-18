@@ -1,0 +1,101 @@
+@font-face{
+    font-family: abster;
+    src:url(font/abster-webfont.woff) format('woff');
+}
+
+*{
+    margin:0px;
+    padding:0;
+    /* box-sizing property allows us to include the padding and border
+     in an element's total width and height. */
+    box-sizing:border-box;
+}
+
+#background{
+    width:100%;
+    height:100vh;
+    object-fit:cover;
+}
+
+
+.container{
+    width:100%;
+    height:100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0,0,0,0.7)), url(https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1680); 
+    /* background-image: url(https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1680); */
+    /* background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0,0,0,0.7)); */
+}
+
+.container .header{
+    width:80%;
+    height:80px;
+
+    /* margin:0 auto allows the content to stay in the middle */
+    margin:0 auto;
+
+    display:flex;
+    justify-content: space-between;
+    /* this set up allows the content inside 'header' to align in the right and left  */
+    align-items: center;
+}
+
+.container .header h1 a{
+    text-decoration: none;
+    color:white;
+    font-family: abster;
+}
+
+ul li{
+    display:inline-block;
+    /* this code gives space between each list elements */
+    margin:0 10px;
+}
+
+ul li a{
+    text-decoration: none;
+    color:white;
+    transition: 0.5s;
+}
+
+ul li a:hover{
+    color:rgb(62, 232, 198);
+}
+
+.container .hero{
+    /* code to put items in the center of the screen */
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%, -50%);
+    color:white;
+    text-align:center;
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container .hero h2{
+    font-size:50px;
+    margin-bottom:20px;
+}
+
+p{
+    font-size: 22px;
+    margin-bottom:20px;
+}
+
+button{
+    /* this lets the whole background to disappear */
+    background: none;
+
+    border:2px solid white;
+    color:white;
+    padding: 15px 20px;
+    border-radius: 20px;
+    outline:none;
+    cursor:pointer;
+    transition:0.5s;
+}
+
+button:hover{
+    background-color: darkslategray;
+}
