@@ -1,5 +1,5 @@
-.thumbnail-1{
-    width:300px;
+.thumbnail-1{   
+    width:100%;
     /* by using the below, feature, it only shows the part of width and height of that image instead of fixing 
     the whole image into that size. So like cropping into that width and height*/
     /* onject fit: contain basically fixes the whole pic into the certain size instead of cropping */
@@ -7,7 +7,7 @@
     /* this one adjusts the perspective of looking at that iamge */
     object-position:left; 
     /* can make a pic circle using border-radius */
-    display:block;
+    /* display:block; */
     margin-bottom:10px;
 }
 
@@ -39,10 +39,7 @@ p{
     /* display:inline-block; */
 
 .first-vid{
-    width:300px;
-    display:inline-block;
-    vertical-align:top;
-    margin-right:15px;
+    /*  */
 }
 
 .pfp{
@@ -77,4 +74,12 @@ p{
 
 .vid-author{
     margin-bottom:5px;
+}
+
+.vid-whole-grid{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap:15px;
+    row-gap:40px;
+
 }
