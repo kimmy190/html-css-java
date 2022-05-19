@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Flexbox practice</title>
+    </head>
+    <body style="padding-bottom:1000px;">
+        <div style="
+            display:flex;
+            flex-direction:row;
+        ">
+            <!-- only take up the box it needs to, so its flexible to the text size, making it flexbox -->
+            <div style="background-color:lightblue"> text div 2</div>
+            <div style="background-color:blueviolet">div2 <p>wd</p></div>
+        </div>
+
+
+        <div style="
+            margin-top:30px;
+            display:flex;
+            flex-direction:row;
+        "> 
+            <!-- only take up the box it needs to, so its flexible to the text size, making it flexbox -->
+            <div style="background-color:lightblue;
+                width:100px;
+            "> 100px div 2</div>
+            <div style="background-color:blueviolet;
+                flex:1;
+            ">flex 1 <p>wd</p>
+            <!-- flex 1 acts as 1 fr in css grid  -->
+        </div>
+        </div>
+
+
+
+        <div style="
+            margin-top:30px;
+            display:flex;
+            flex-direction:row;
+        "> 
+            <div style="background-color:lightblue;
+                width:100px;
+            "> 100px div 2</div>
+            <div style="background-color:blueviolet;
+                flex:1;
+            ">flex 1</div>
+    
+            <div style="background-color:lightblue;
+                flex:2;
+            ">flex 2 </div>
+        </div>
+
+        <!-- creating a banner above like a youtube -->
+        <div style="
+        margin-top:30px;
+        height:70px;
+        display:flex;
+        flex-direction:row;
+        border:2px solid gray;
+    "> 
+            <div style="background-color:lightblue;
+                width:100px;
+            "> 100px div 2</div>
+            <div style="background-color:blueviolet;
+                flex:1;
+            ">flex 1</div>
+
+            <div style="background-color:lightblue;
+                flex:2;
+            ">flex 2 </div>
+        </div>
+
+
+
+        <div style="
+        margin-top:30px;
+        height:70px;
+        display:flex;
+        flex-direction:row;
+        border:2px solid gray;
+        /* justify-content:start => this mean that the items will be aligned from the start */
+        justify-content:center;
+        
+        "> 
+            <div style="background-color:lightblue;
+                width:100px;
+            "> 100px</div>
+            <div style="background-color:lightcoral;
+                width:100px;
+            ">100px</div>
+            <div style="background-color:lightblue;
+                width:100px;
+            ">100px </div>
+        </div>
+
+
+        <div style="
+        margin-top:30px;
+        height:70px;
+        display:flex;
+        flex-direction:row;
+        border:2px solid gray;
+        /* justify-content:start => this mean that the items will be aligned from the start */
+        justify-content:space-between;
+        
+        "> 
+            <div style="background-color:lightblue;
+                width:100px;
+            "> 100px</div>
+            <div style="background-color:lightcoral;
+                width:100px;
+            ">100px</div>
+            <div style="background-color:lightblue;
+                width:100px;
+            ">100px </div>
+        </div>
+
+
+        <div style="
+        margin-top:30px;
+        height:70px;
+        display:flex;
+        flex-direction:row;
+        border:2px solid gray;
+        /* justify-content:start => this mean that the items will be aligned from the start */
+        justify-content:space-between;
+
+        /* align-items: start => this means that item will no longer stretch, but only take up the space wanted */
+        align-items: center;
+        /* align-items: end => items in the bottom */
+        
+        "> 
+            <div style="background-color:lightblue;
+                width:100px;
+            "> 100px</div>
+            <div style="background-color:lightcoral;
+                width:100px;
+            ">100px</div>
+            <div style="background-color:lightblue;
+                width:100px;
+            ">100px </div>
+        </div>
+
+    </body>
+</html>

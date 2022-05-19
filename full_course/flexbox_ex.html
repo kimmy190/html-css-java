@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Flexbox examples practice </title>
+        <style>
+            .body{
+                display:flex;
+                flex-direction: row;
+                background-color: rgb(125, 47, 185);
+                justify-content: space-between;
+                align-items: center;
+                padding:14px;
+            }
+
+            .left, .right{
+                width:200px;
+                /* background-color: aquamarine;  */
+                font-family: Arial, Helvetica, sans-serif;
+                color:white;
+            }
+
+            .left{
+                cursor:pointer;
+            }
+
+            .right{
+                display:flex;
+                justify-content: end;
+            }
+
+            .center{
+                flex:1;
+                display:flex;
+                justify-content: center;
+            }
+
+            .search{
+                border:none;
+                border-radius:15px;
+                padding:7px;
+                width:80%;
+            }
+
+            button{
+                border:1px solid white;
+                background: none;
+                color:white;
+                padding:7px;
+                width:50%;
+                cursor:pointer;
+                transition:all 0.5s; 
+            }
+
+            button:hover{
+                background-color: rgb(84, 37, 113);
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="body">
+
+            <div class="left">Home</div>
+
+            <div class="center">
+                <input type="text" placeholder="Search" class="search">
+            </div>
+            
+            <div class="right">
+                <button>Download</button>
+            </div>
+
+        </div>
+    </body>
+</html>
