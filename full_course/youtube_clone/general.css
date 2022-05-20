@@ -1,0 +1,10 @@
+p{
+    /* the comma and Arial is called a font sack */
+    font-family: Roboto, Arial;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+body{
+    margin:0;
+}

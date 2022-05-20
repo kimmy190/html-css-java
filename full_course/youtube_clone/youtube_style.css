@@ -11,20 +11,7 @@
     margin-bottom:10px;
 }
 
-.search-bar{
-    font-size:16px;
-    margin-left:13px;
-    /* it switches to block element, making it use the next line */
-    display: block; 
 
-}
-
-p{
-    /* the comma and Arial is called a font sack */
-    font-family: Roboto, Arial;
-    margin-top: 0px;
-    margin-bottom: 0px;
-}
 
 .video-title{
     /* display:inline-block; */
