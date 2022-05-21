@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Css position practice</title>
+    </head>
+    <body style="height:300px; 
+        padding-bottom:1000px;
+
+        /* this is the way to add space between the header and the content instead of 
+        adding margin-top at each of the contents 
+         */
+        padding-top:60px;
+        padding-left:80px;
+    
+    ">
+        <!-- This allows one to stay still while moving the page -->
+        <div style="
+            background-color: black;
+            color:white;
+
+
+            /* this allows the certain image to be fixed in that position */
+            position:fixed;
+
+            top:0px;
+            left:0px;
+
+            /* setting the right property, then the block stretches */
+            right:0px;
+
+            /* same with this property, it will stretch
+            bottom:100px;  */
+
+            /* since bottom property controlls the height based on the size of the screen, we instead use height */
+            height:50px;
+        ">
+            header</div>
+
+        <div style="background-color:green;
+            color:white;
+            position:fixed;
+            top:50px;
+            left:0px;
+            bottom:0;
+            width:72px;
+        
+        ">sidebar</div>
+
+
+        <div style="background-color: lightblue;
+            height:200px;
+            width:200px;
+
+            /* this position:static is a default position, so no diff between having this line or not */
+            position:static;
+            
+
+        ">div1</div>
+
+        <div style="background-color:lightpink;
+            height:200px;
+            width:200px;
+
+        ">div2</div>
+    </body>
+</html>

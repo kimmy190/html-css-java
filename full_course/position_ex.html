@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Using CSS position and doing examples</title>
+        <style>
+            *{
+                margin:0px;
+                padding:0px;
+            }
+            body{
+                
+            }
+
+            .right-sidebar{
+                background-color: green;
+                position:fixed;
+                width:300px;
+                top:0;
+                bottom:0;
+                right:0;
+                
+            }
+
+            .overlay{
+                display:flex;
+                
+                background-color: rgba(0, 0, 0, 0.5);
+
+                /* these four lines of the code below was the key :
+                to make a certain content fit the whole screen, use this
+                */
+                position: fixed;
+                top:0;
+                bottom:0;
+                left:0;
+                right:0;
+
+
+                justify-content: center;
+                align-items: center;
+            }
+
+            .pop-bar{
+                background-color: white;
+                width:200px;
+                padding:20px;
+                height:100px;
+                border-radius: 20px;
+            }
+
+
+
+        </style>
+    </head>
+    <body>
+        
+
+        <div class="overlay">
+            <div class="pop-bar">
+                <p>Modal Title</p>
+                <p>This is a modal</p>
+                <button>Close</button>
+            </div>
+        </div>
+
+        <div class="right-sidebar">
+            right sidebar
+        </div>
+
+    </body>
+</html>
