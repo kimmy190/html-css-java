@@ -15,18 +15,31 @@
                 font-family: Arial, Helvetica, sans-serif;
             }
 
+            body{
+                display:flex;
+                justify-content: center;
+                background-color: black;
+            }
+
+
             .body-part{
-                /* background-color: black; */
+                background-color: black; 
+
                 display:flex;
                 flex-direction: column;
                 width:600px;
+                height:100vh;
+                border-left: 1px solid rgb(173, 173, 173);
+                border-right: 1px solid rgb(173, 173, 173);
             }
 
             .upper{
-                background-color: aquamarine;
+                /* background-color: aquamarine; */
                 display:flex;
                 flex-direction: row;
                 height:50px;
+                padding-left:15px;
+                margin-top:20px;
             }
 
             .pfp{
@@ -38,7 +51,7 @@
 
 
             .account{
-                background-color: lightblue;
+                /* background-color: lightblue; */
                 display: flex;
                 flex-direction: column;
                 flex:1;
@@ -47,28 +60,107 @@
             }
 
             .opt-icon{
-                background-color: bisque;
+                /* background-color: bisque; */
                 width:30px;
+                height:30px;
+                margin:15px;
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                color:rgb(173, 173, 173);
+                cursor:pointer;
+                /* transition: background-color 0.5s; */
+
             }
 
+            .opt-icon:hover{
+                color:rgb(0, 153, 255);
+                background-color: rgba(0, 153, 255, 0.2);
+                border-radius: 50%;
+                
+            }
+
+            
+
             .lower{
-                background-color: pink;
+                /* background-color: pink; */
                 display:flex;
                 flex-direction: column;
-                align-items: center; 
+                padding-left:15px;
+                /* align-items: center;  */
                 
             }
 
             .youtube-box{
                 border:1px solid rgb(173, 173, 173);
-                border-radius: 3px;
-                width:80%;
+                border-radius: 15px;
                 display:flex;
-                flex-direction: column;
-                justify-content: center;
+                flex-direction: row;
+                height:100px;
+                margin-right:15px;
+                cursor:pointer;
             }
 
+            .vid-box{
+                width:20%;
+                /* background-color: aquamarine; */
 
+                /* top-left | top-right | bottom-right | bottom-left */
+                border-radius: 15px 0px 0px 15px;
+                border-right:1px solid rgb(173, 173, 173);
+            }
+
+            .descrip{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding-left: 15px;
+            }
+
+            /* Captions */
+
+            .three{
+                padding-top:15px;
+                padding-bottom: 15px;
+                color:white;
+                font-size:23px;
+            }
+
+            .below{
+                padding-top: 15px;
+                padding-bottom: 15px;
+                border-bottom: 1px solid rgb(173, 173, 173);
+                font-size:15px;
+                color:#71767B;
+                margin-right: 15px;
+            }
+
+            .one, .two, .four, .five{
+                font-size:15px;
+                color:#71767B;
+            }
+
+            .one, .five{
+                font-weight: bold;
+                color:white;
+            }
+
+            .five{
+                margin-top:5px;
+            }
+
+            #youtube{
+                color:rgb(0, 153, 255);
+                cursor:pointer;
+            }
+
+            #youtube:hover{
+                text-decoration: underline;
+            }
+
+            a{
+                text-decoration: none;
+            }
 
         </style>
     </head>
@@ -77,12 +169,10 @@
 
             <div class="upper">
                 <img class="pfp" src="https://pbs.twimg.com/profile_images/1516476998482153474/u8alVpBJ_400x400.jpg">
-
                 <div class="account">
-                    <p>Coachella</p>
-                    <p>@coachella</p>
+                    <p class="cap one">Coachella</p>
+                    <p class="cap two">@coachella</p>
                 </div>
-
                 <div class="opt-icon">
                     <i class="fa-solid fa-ellipsis"></i>
                 </div>
@@ -90,23 +180,20 @@
 
 
             <div class="lower">
-                <p>Watch "As It Was" live at Coachella on @YouTube</p>
+                <p class="cap three">Watch "As It Was" live at Coachella on <span id="youtube">@YouTube<span></p>
                 <div class="youtube-box">
-                    <p>youtube.com</p>
-                    <p>Harry Styles - As It Was - Live at Coachella 2022</p>
+                    <div class="vid-box"></div>
+                    <div class="descrip">
+                        <a href="https://www.youtube.com/watch?v=dnle7X1hqTQ&feature=youtu.be" target="_blank">
+                            <p class="cap four">youtube.com</p>
+                            <p class="cap five">Harry Styles - As It Was - Live at Coachella 2022</p>
+                        </a>
+                    </div>
                 </div>
 
+                <p class="below"> 5:43 PM &#8226; May 20, 2022 &#8226; Twitter Web App</p>
+                
             </div>
-
-
-
-
-
-
-
-
-
-
 
 
         </div>
