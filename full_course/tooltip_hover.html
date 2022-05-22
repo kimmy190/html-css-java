@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Tooltip exercise</title>
+        <style>
+            *{
+                margin:0;
+                padding:0;
+            }
+
+            p{
+                font-family: Arial;
+            }
+
+            .whole{
+                display:flex;
+                flex-direction: column;
+                width:280px;
+                margin:40px;
+            }
+
+            .contents{
+                display:flex;
+                flex-direction: row;
+                width:280px;
+                background-color: pink;
+                
+                
+            }
+
+            .pfp{
+                object-fit: cover;
+                width:50px;
+                height:50px;
+                border-radius:50%;
+                margin-right:20px;
+            }
+
+            .descrip{
+                display:flex;
+                flex-direction: column;
+                flex:1;
+                background-color: blue;
+                justify-content: center;
+            }
+
+            .below{
+                background-color: aquamarine;
+                padding-left:70px;
+            }
+
+            .little{
+                font-size:10px;
+                color:grey;
+            }
+
+            .image-tooltip{
+                position:relative;
+            }
+
+            .tooltip{
+                background-color: grey;
+                position: absolute;
+                width:160px;
+                display:flex;
+                flex-direction: row;
+                border-radius: 10px;
+                padding:7px 10px;
+                bottom:-70px;
+                opacity: 0;
+            }
+
+            .one{
+                cursor: pointer;
+            }
+
+            .contents:hover .tooltip{
+                opacity: 1;
+            }
+
+            .context{
+                display:flex;
+                flex-direction: column;
+                justify-content: center;
+                
+            }
+
+            .context p{
+                font-size: 12px;
+            }
+            
+
+
+        </style>
+    </head>
+    <body>
+        <div class="whole">
+            <div class="contents">
+                <div class="image-tooltip">
+                    <img class="pfp one" src="https://globalnews.ca/wp-content/uploads/2021/03/spongebob-squarepants.jpg?quality=85&strip=all">
+                    
+                    <div class="tooltip">
+                        <img class="pfp two" src="https://globalnews.ca/wp-content/uploads/2021/03/spongebob-squarepants.jpg?quality=85&strip=all">
+                        <div class="context">
+                            <p>Markiplier</p>
+                            <p>30M subscribers</p>
+                        </div>
+                    </div>
+                
+                </div>
+                
+
+                <div class="descrip">
+                    <p>Talking Tech and AI with Google CEO Sundar Pichai</p>
+                </div>
+            </div>
+    
+            <div class="below">
+                <p class="little">Marques Brownlee</p>
+                <p class="little">3.4M views &#8226; 6 months ago</p>
+            </div>
+        </div>
+    
+    </body>
+</html>
