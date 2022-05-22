@@ -8,7 +8,7 @@
     object-position:left; 
     /* can make a pic circle using border-radius */
     /* display:block; */
-    margin-bottom:10px;
+    /* margin-bottom:10px; */
 }
 
 
@@ -69,4 +69,21 @@
     column-gap:15px;
     row-gap:40px;
 
+}
+
+.thumbnail-row-1{
+    margin-bottom: 12px;
+    position:relative;
+}
+.video-time{
+    background-color: black;
+    color:white;
+    position:absolute;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    border-radius: 2px;
+    padding:3px;
+    bottom:10px;
+    right:5px;
 }
