@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Inheritance property</title>
+        <style>
+            .first{
+                background-color: bisque;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                border:1px solid red;
+            }
+
+            .second{
+
+            }
+
+        </style>
+    </head>
+    <title>Inheritance property</title>
+    <body>
+
+        <!-- inheritance mostly works with text property, so below shows a good example of 
+        how text style are affected down to the small div class second -->
+
+        <!-- so for example, border line only affects the biggest class, first instead of  -->
+        <div class="first">
+            bruhhh
+            <div class="second">
+                i rlly dont care ahfj
+            </div>
+        </div>
+
+
+
+        <!-- semantic elements , example -->
+        <!-- they have the same meaning as <div>, but have meaning to screen readers -->
+        
+        <!--this is for the header part -->
+        <header></header>
+
+        <!-- this means navigation -->
+        <nav></nav>
+
+
+        <!-- this implies that main element should be stored here  -->
+        <main></main>
+    </body>
+</html>
+
+
+<!-- certain properties will be passed down to the inner elements from the upper element -->
+
+<!-- by this feature, can save much code  -->
+
+
+
+<!-- another feature, css specificity : 
+while you set up the color of the font in the body, some classes that specify certain 
+text will not be affected. 
+
+so by using inheritance and css specificty, can set up the desgins 
+
+-->
+
+
